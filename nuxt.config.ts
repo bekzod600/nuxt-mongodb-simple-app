@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
   runtimeConfig: {
-    MONGO_URI: process.env.MONGO_URI,
+    MONGO_URI: process.env.MONGO_URI || "mongodb+srv://bekzod:944455537@cluster0.iahpanx.mongodb.net/nuxt_mongodb?retryWrites=true&w=majority&appName=Cluster0",
   },
   nitro: {
     plugins: ["@/server/db/index.ts"],
